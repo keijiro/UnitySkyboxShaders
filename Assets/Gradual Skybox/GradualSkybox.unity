@@ -20,7 +20,7 @@ RenderSettings:
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientLight: {r: .617647052, g: .617647052, b: .617647052, a: 1}
-  m_SkyboxMaterial: {fileID: 1593096537}
+  m_SkyboxMaterial: {fileID: 2100000, guid: be5da9de2da8748a5bb4a6edfe3493d8, type: 2}
   m_HaloStrength: .5
   m_FlareStrength: 1
   m_HaloTexture: {fileID: 0}
@@ -352,7 +352,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1204139347}
-  m_LocalRotation: {x: .134418577, y: 0, z: 0, w: .990924656}
+  m_LocalRotation: {x: -.530215263, y: 0, z: 0, w: .847863078}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -368,7 +368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb3f0805653cf4dceb60f872f0e022ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetMaterial: {fileID: 1593096537}
+  targetMaterial: {fileID: 2100000, guid: e7625a173e3a646b18b40bf5f02aff99, type: 2}
   topColor: {r: .852941155, g: .457828701, b: .457828701, a: 0}
   bottomColor: {r: .204923317, g: .198204994, b: .286764681, a: 0}
 --- !u!1 &1205693600
@@ -463,29 +463,3 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!21 &1593096537
-Material:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Custom/GradualSkybox
-  m_Shader: {fileID: 4800000, guid: 1b1032babd6d64921a50506aa07cf3b2, type: 3}
-  m_ShaderKeywords: []
-  m_SavedProperties:
-    serializedVersion: 2
-    m_TexEnvs: {}
-    m_Floats: {}
-    m_Colors:
-      data:
-        first:
-          name: _Color1
-        second: {r: .204923317, g: .198204994, b: .286764681, a: 0}
-      data:
-        first:
-          name: _Color2
-        second: {r: .852941155, g: .457828701, b: .457828701, a: 0}
-      data:
-        first:
-          name: _UpVector
-        second: {r: 0, g: .963863313, b: .266397357, a: 0}
