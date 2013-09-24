@@ -19,7 +19,15 @@ Material:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
-    m_Floats: {}
+    m_Floats:
+      data:
+        first:
+          name: _UpVectorPitch
+        second: -41.9399986
+      data:
+        first:
+          name: _UpVectorYaw
+        second: 26.3999996
     m_Colors:
       data:
         first:
@@ -28,12 +36,12 @@ Material:
       data:
         first:
           name: _Color1
-        second: {r: .204923317, g: .198204994, b: .286764681, a: 0}
+        second: {r: .540884137, g: .528546691, b: .691176474, a: 0}
       data:
         first:
           name: _Color2
-        second: {r: .852941155, g: .457828701, b: .457828701, a: 0}
+        second: {r: 1, g: .75, b: .75, a: 0}
       data:
         first:
           name: _UpVector
-        second: {r: 0, g: .437743545, b: -.899099886, a: 0}
+        second: {r: -.297172815, g: .743845165, b: -.598650753, a: 0}

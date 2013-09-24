@@ -3,12 +3,15 @@
         _Color1 ("Color 1", Color) = (1, 1, 1, 0)
         _Color2 ("Color 2", Color) = (1, 1, 1, 0)
         _UpVector ("Up Vector", Vector) = (0, 1, 0, 0)
+        _UpVectorPitch ("Up Vector Pitch", float) = 0
+        _UpVectorYaw ("Up Vector Yaw", float) = 0
 	}
 	SubShader {
         Tags { "Queue"="Background" }
         Pass {
             ZWrite Off
             Cull Off
+            Fog { Mode Off }
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
@@ -42,5 +45,6 @@
             }
             ENDCG
         }
-	} 
+	}
+    CustomEditor "GradualSkyboxInspector"
 }
