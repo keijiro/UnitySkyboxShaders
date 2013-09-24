@@ -1,8 +1,8 @@
 ﻿Shader "Custom/HorizontalSkybox" {
 	Properties {
-        _Color1 ("Color 1", Color) = (1, 1, 1, 0)
-        _Color2 ("Color 2", Color) = (1, 1, 1, 0)
-        _Color3 ("Color 3", Color) = (1, 1, 1, 0)
+        _Color1 ("Top Color", Color) = (1, 1, 1, 0)
+        _Color2 ("Horizon Color", Color) = (1, 1, 1, 0)
+        _Color3 ("Bottom Color", Color) = (1, 1, 1, 0)
 	}
 	SubShader {
         Tags { "Queue"="Background" }

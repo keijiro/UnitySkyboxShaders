@@ -2,7 +2,7 @@
 using UnityEditor;
 using System.Collections;
 
-public class GradualSkyboxInspector : MaterialEditor
+public class GradientSkyboxInspector : MaterialEditor
 {
     public override void OnInspectorGUI ()
     {
