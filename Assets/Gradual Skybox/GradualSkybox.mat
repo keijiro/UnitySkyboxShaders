@@ -31,17 +31,17 @@ Material:
     m_Colors:
       data:
         first:
-          name: _Color
-        second: {r: 1, g: 1, b: 1, a: 1}
-      data:
-        first:
           name: _Color1
-        second: {r: .540884137, g: .528546691, b: .691176474, a: 0}
+        second: {r: .404411793, g: .14570719, b: .14570719, a: 0}
       data:
         first:
           name: _Color2
-        second: {r: 1, g: .75, b: .75, a: 0}
+        second: {r: .801470578, g: .0766111389, b: .0766111389, a: 0}
       data:
         first:
           name: _UpVector
         second: {r: -.297172815, g: .743845165, b: -.598650753, a: 0}
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}

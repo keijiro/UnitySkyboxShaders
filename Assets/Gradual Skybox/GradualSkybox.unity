@@ -14,9 +14,9 @@ SceneSettings:
 --- !u!104 &2
 RenderSettings:
   m_Fog: 1
-  m_FogColor: {r: .68235296, g: .592156887, b: .733333349, a: 1}
+  m_FogColor: {r: .568627477, g: .0941176489, b: .0784313753, a: 1}
   m_FogMode: 3
-  m_FogDensity: .150000006
+  m_FogDensity: .119999997
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientLight: {r: .720588207, g: .720588207, b: .720588207, a: 1}
@@ -99,8 +99,8 @@ Light:
   m_Enabled: 1
   serializedVersion: 3
   m_Type: 1
-  m_Color: {r: .5, g: .503448248, b: 1, a: 1}
-  m_Intensity: .150000006
+  m_Color: {r: .0344824791, g: 0, b: 1, a: 1}
+  m_Intensity: .100000001
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -161,7 +161,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 3
   m_Type: 1
-  m_Color: {r: 1, g: .669117689, b: .669117689, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: .150000006
   m_Range: 10
   m_SpotAngle: 30
@@ -290,10 +290,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mode: 0
-  intensity: 1.5
-  chromaticAberration: .200000003
+  intensity: 1.79999995
+  chromaticAberration: 1
   axialAberration: .5
-  blur: 0
+  blur: .200000003
   blurSpread: .75
   luminanceDependency: .25
   blurDistance: 2.5
