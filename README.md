@@ -6,13 +6,19 @@ Simple and easy-to-use skybox shaders.
 GradientSkybox
 --------------
 
+![Gradient Skybox](https://github.com/keijiro/unity-skybox-shaders/raw/gh-pages/gradient.png)
+
 This is a kind of color gradient shader. You can specify the top color and the bottom color.
 This shader simply interpolate these two colors.
 
 You can also modify the attitude (rotation) to tilt the gradation.
 
+![Inspector](https://github.com/keijiro/unity-skybox-shaders/raw/gh-pages/inspector.png)
+
 HorizontalSkybox
 ----------------
+
+![Horizontal Skybox](https://github.com/keijiro/unity-skybox-shaders/raw/gh-pages/horizontal.png)
 
 This is an another kind of color gradient shader. In this shader, you can specify three colors:
 top, horizon and bottom.
