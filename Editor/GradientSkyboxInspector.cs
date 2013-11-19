@@ -16,8 +16,8 @@ public class GradientSkyboxInspector : MaterialEditor
 
         EditorGUI.BeginChangeCheck ();
 
-        ColorProperty ("_Color2", "Top Color");
-        ColorProperty ("_Color1", "Bottom Color");
+        ColorProperty (GetMaterialProperty (targets, "_Color2"), "Top Color");
+        ColorProperty (GetMaterialProperty (targets, "_Color1"), "Bottom Color");
         dp = EditorGUILayout.FloatField ("Pitch", dp);
         dy = EditorGUILayout.FloatField ("Yaw", dy);
 
