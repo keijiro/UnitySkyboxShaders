@@ -1,10 +1,10 @@
 ﻿Shader "Custom/HorizontalSkybox" {
-	Properties {
+    Properties {
         _Color1 ("Top Color", Color) = (1, 1, 1, 0)
         _Color2 ("Horizon Color", Color) = (1, 1, 1, 0)
         _Color3 ("Bottom Color", Color) = (1, 1, 1, 0)
-	}
-	SubShader {
+    }
+    SubShader {
         Tags { "Queue"="Background" }
         Pass {
             ZWrite Off
@@ -47,5 +47,5 @@
             }
             ENDCG
         }
-	} 
+    } 
 }

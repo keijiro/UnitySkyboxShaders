@@ -6,37 +6,43 @@ public class GradientSkyboxInspector : MaterialEditor
 {
     public override void OnInspectorGUI ()
     {
-        if (!isVisible) {
-            return;
-        }
+        serializedObject.Update ();
 
-        var m = target as Material;
-        var dp = m.GetFloat ("_UpVectorPitch");
-        var dy = m.GetFloat ("_UpVectorYaw");
+        if (isVisible)
+        {
+            EditorGUI.BeginChangeCheck ();
 
-        EditorGUI.BeginChangeCheck ();
+            ColorProperty (GetMaterialProperty (targets, "_Color2"), "Top Color");
+            ColorProperty (GetMaterialProperty (targets, "_Color1"), "Bottom Color");
 
-        ColorProperty (GetMaterialProperty (targets, "_Color2"), "Top Color");
-        ColorProperty (GetMaterialProperty (targets, "_Color1"), "Bottom Color");
-        dp = EditorGUILayout.FloatField ("Pitch", dp);
-        dy = EditorGUILayout.FloatField ("Yaw", dy);
+            var dp = GetMaterialProperty (targets, "_UpVectorPitch");
+            var dy = GetMaterialProperty (targets, "_UpVectorYaw");
 
-        if (EditorGUI.EndChangeCheck ()) {
-            var rp = dp * Mathf.Deg2Rad;
-            var ry = dy * Mathf.Deg2Rad;
+            if (dp.hasMixedValue || dy.hasMixedValue)
+            {
+                EditorGUILayout.HelpBox ("Editing angles is disabled because they have mixed values.", MessageType.Warning);
+            }
+            else
+            {
+                FloatProperty (dp, "Pitch");
+                FloatProperty (dy, "Yaw");
+            }
 
-            var upVector = new Vector4 (
-                Mathf.Sin (rp) * Mathf.Sin (ry),
-                Mathf.Cos (rp),
-                Mathf.Sin (rp) * Mathf.Cos (ry),
-                0.0f
-            );
+            if (EditorGUI.EndChangeCheck ())
+            {
+                var rp = dp.floatValue * Mathf.Deg2Rad;
+                var ry = dy.floatValue * Mathf.Deg2Rad;
+                
+                var upVector = new Vector4 (
+                    Mathf.Sin (rp) * Mathf.Sin (ry),
+                    Mathf.Cos (rp),
+                    Mathf.Sin (rp) * Mathf.Cos (ry),
+                    0.0f
+                );
+                GetMaterialProperty (targets, "_UpVector").vectorValue = upVector;
 
-            m.SetVector ("_UpVector", upVector);
-            m.SetFloat ("_UpVectorPitch", dp);
-            m.SetFloat ("_UpVectorYaw", dy);
-
-            PropertiesChanged();
+                PropertiesChanged ();
+            }
         }
     }
 }

@@ -1,13 +1,13 @@
 ﻿Shader "Custom/GradientSkybox" {
-	Properties {
+    Properties {
         _Color1 ("Color 1", Color) = (1, 1, 1, 0)
         _Color2 ("Color 2", Color) = (1, 1, 1, 0)
         _UpVector ("Up Vector", Vector) = (0, 1, 0, 0)
         // The properties below are used in the custom inspector.
         _UpVectorPitch ("Up Vector Pitch", float) = 0
         _UpVectorYaw ("Up Vector Yaw", float) = 0
-	}
-	SubShader {
+    }
+    SubShader {
         Tags { "Queue"="Background" }
         Pass {
             ZWrite Off
@@ -46,6 +46,6 @@
             }
             ENDCG
         }
-	}
+    }
     CustomEditor "GradientSkyboxInspector"
 }
