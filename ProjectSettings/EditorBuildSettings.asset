@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Horizontal Skybox/HorizontalSkybox.unity
+    path: Assets/Test/HorizontalSkybox.unity
   - enabled: 1
-    path: Assets/Gradient Skybox/GradientSkybox.unity
+    path: Assets/Test/GradientSkybox.unity
