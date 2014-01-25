@@ -1,10 +1,10 @@
-unity-skybox-shaders
-====================
+UnitySkyboxShaders
+==================
 
 Simple and easy-to-use skybox shaders.
 
-GradientSkybox
---------------
+Gradient Skybox
+---------------
 
 ![Gradient Skybox](https://github.com/keijiro/unity-skybox-shaders/raw/gh-pages/gradient.png)
 
@@ -15,8 +15,8 @@ You can also modify the attitude (rotation) to tilt the gradation.
 
 ![Inspector](https://github.com/keijiro/unity-skybox-shaders/raw/gh-pages/inspector.png)
 
-HorizontalSkybox
-----------------
+Horizontal Skybox
+-----------------
 
 ![Horizontal Skybox](https://github.com/keijiro/unity-skybox-shaders/raw/gh-pages/horizontal.png)
 
