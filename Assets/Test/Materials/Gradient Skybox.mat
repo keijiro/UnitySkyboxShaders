@@ -23,12 +23,24 @@ Material:
     m_Floats:
       data:
         first:
+          name: _Intensity
+        second: 3
+      data:
+        first:
           name: _UpVectorPitch
-        second: -41.9399986
+        second: -40
       data:
         first:
           name: _UpVectorYaw
-        second: 26.3999996
+        second: 120
+      data:
+        first:
+          name: _Power
+        second: 5
+      data:
+        first:
+          name: _Exponent
+        second: 5
     m_Colors:
       data:
         first:
@@ -37,12 +49,12 @@ Material:
       data:
         first:
           name: _Color1
-        second: {r: .235294104, g: .0899653956, b: .0899653956, a: 0}
+        second: {r: .161764681, g: 0, b: 0, a: 0}
       data:
         first:
           name: _Color2
-        second: {r: .801470578, g: .0766111389, b: .0766111389, a: 0}
+        second: {r: 1, g: .720588207, b: .720588207, a: 0}
       data:
         first:
           name: _UpVector
-        second: {r: -.297172815, g: .743845165, b: -.598650753, a: 0}
+        second: {r: -.556670368, g: .766044438, b: .321393818, a: 0}

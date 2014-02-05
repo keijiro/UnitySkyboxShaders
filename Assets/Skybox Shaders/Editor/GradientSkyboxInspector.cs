@@ -14,6 +14,8 @@ public class GradientSkyboxInspector : MaterialEditor
 
             ColorProperty (GetMaterialProperty (targets, "_Color2"), "Top Color");
             ColorProperty (GetMaterialProperty (targets, "_Color1"), "Bottom Color");
+            FloatProperty (GetMaterialProperty (targets, "_Intensity"), "Intensity");
+            FloatProperty (GetMaterialProperty (targets, "_Exponent"), "Exponent");
 
             var dp = GetMaterialProperty (targets, "_UpVectorPitch");
             var dy = GetMaterialProperty (targets, "_UpVectorYaw");

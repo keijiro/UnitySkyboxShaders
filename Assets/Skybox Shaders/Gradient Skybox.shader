@@ -5,6 +5,8 @@
         _Color1 ("Color 1", Color) = (1, 1, 1, 0)
         _Color2 ("Color 2", Color) = (1, 1, 1, 0)
         _UpVector ("Up Vector", Vector) = (0, 1, 0, 0)
+        _Intensity ("Intensity", Float) = 1.0
+        _Exponent ("Exponent", Float) = 1.0
         // The properties below are used in the custom inspector.
         _UpVectorPitch ("Up Vector Pitch", float) = 0
         _UpVectorYaw ("Up Vector Yaw", float) = 0
@@ -28,7 +30,9 @@
     
     half4 _Color1;
     half4 _Color2;
-    float4 _UpVector;
+    half4 _UpVector;
+    half _Intensity;
+    half _Exponent;
     
     v2f vert (appdata v)
     {
@@ -40,7 +44,8 @@
     
     fixed4 frag (v2f i) : COLOR
     {
-        return lerp (_Color1, _Color2, dot (normalize (i.texcoord), _UpVector) * 0.5f + 0.5f);
+        half d = dot (normalize (i.texcoord), _UpVector) * 0.5f + 0.5f;
+        return lerp (_Color1, _Color2, pow (d, _Exponent)) * _Intensity;
     }
 
     ENDCG
