@@ -24,15 +24,23 @@ Material:
       data:
         first:
           name: _Intensity
-        second: 2
+        second: 1.39999998
+      data:
+        first:
+          name: _Exponent
+        second: 20
       data:
         first:
           name: _Exposure
         second: 2.5
       data:
         first:
-          name: _Exponent
-        second: 3
+          name: _Exponent1
+        second: 35
+      data:
+        first:
+          name: _Exponent2
+        second: 1
     m_Colors:
       data:
         first:
@@ -41,11 +49,11 @@ Material:
       data:
         first:
           name: _Color1
-        second: {r: .219296515, g: .254158437, b: .382359087, a: 0}
+        second: {r: .27735728, g: .288800567, b: .33088237, a: 0}
       data:
         first:
           name: _Color2
-        second: {r: .215686277, g: .215686277, b: .215686277, a: 0}
+        second: {r: .83088237, g: .83088237, b: .83088237, a: 0}
       data:
         first:
           name: _UpVector
@@ -53,4 +61,4 @@ Material:
       data:
         first:
           name: _Color3
-        second: {r: .823529422, g: .82474643, b: 1, a: 0}
+        second: {r: .75, g: .73440659, b: .523897052, a: 0}

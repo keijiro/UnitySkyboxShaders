@@ -27,6 +27,10 @@ Material:
         second: 3
       data:
         first:
+          name: _Exponent
+        second: 5
+      data:
+        first:
           name: _UpVectorPitch
         second: -40
       data:
@@ -36,10 +40,6 @@ Material:
       data:
         first:
           name: _Power
-        second: 5
-      data:
-        first:
-          name: _Exponent
         second: 5
     m_Colors:
       data:
