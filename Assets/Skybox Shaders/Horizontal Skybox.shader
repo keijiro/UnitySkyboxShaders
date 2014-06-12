@@ -5,8 +5,9 @@
         _Color1 ("Top Color", Color) = (1, 1, 1, 0)
         _Color2 ("Horizon Color", Color) = (1, 1, 1, 0)
         _Color3 ("Bottom Color", Color) = (1, 1, 1, 0)
-        _Intensity ("Intensity", Float) = 1.0
-        _Exponent ("Exponent", Float) = 1.0
+        _Exponent1 ("Exponent Factor for Top Half", Float) = 1.0
+        _Exponent2 ("Exponent Factor for Bottom Half", Float) = 1.0
+        _Intensity ("Intensity Amplifier", Float) = 1.0
     }
 
     CGINCLUDE
@@ -29,7 +30,8 @@
     half4 _Color2;
     half4 _Color3;
     half _Intensity;
-    half _Exponent;
+    half _Exponent1;
+    half _Exponent2;
     
     v2f vert (appdata v)
     {
@@ -39,11 +41,11 @@
         return o;
     }
     
-    fixed4 frag (v2f i) : COLOR
+    half4 frag (v2f i) : COLOR
     {
         float p = normalize (i.texcoord).y;
-        float p1 = pow (max (0.0f, p), _Exponent);
-        float p3 = pow (max (0.0f, -p), _Exponent);
+        float p1 = 1.0f - pow (min (1.0f, 1.0f - p), _Exponent1);
+        float p3 = 1.0f - pow (min (1.0f, 1.0f + p), _Exponent2);
         float p2 = 1.0f - p1 - p3;
         return (_Color1 * p1 + _Color2 * p2 + _Color3 * p3) * _Intensity;
     }
